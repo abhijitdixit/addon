@@ -51,6 +51,7 @@ void Add(const FunctionCallbackInfo<Value>& args) {
 
 void Init(Local<Object> exports) {
   NODE_SET_METHOD(exports, "add", Add);
+  NODE_SET_METHOD(exports, "hello", hello);
 }
 
 NODE_MODULE(addon, Init)
